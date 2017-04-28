@@ -22,11 +22,15 @@
   </head>
 
   <body id="page-top" class="index">
+  <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
 
     <%= render 'shared/nav' %>
+    <%= render 'shared/header' %>
 
         <%= yield %>
 
+    <%= render 'shared/button_top' %>
     <%= render 'shared/footer' %>
 
     <p class="notice"><%= notice %></p>
