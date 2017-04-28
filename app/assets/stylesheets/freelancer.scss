@@ -4,6 +4,7 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  background: url("wood.jpeg");
 }
 p {
   font-size: 20px;
@@ -304,6 +305,10 @@ footer .footer-below {
   padding: 25px 0;
   background-color: #233140;
 }
+
+footer .list-inline {
+  align-content: center;
+}
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -511,4 +516,15 @@ fieldset[disabled] .btn-success.active {
 }
 div#maincontent {
   outline: none;
+}
+
+.my-nav {
+  margin-top: -6px;
+  font-size: 1.5em;
+  float: right;
+  margin-left: 50px;
+}
+
+.nav {
+  margin-top: 40px;
 }

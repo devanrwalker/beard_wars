@@ -10,26 +10,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Beard Wars</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'freelancer', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag    'freelancer.min', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body id="page-top" class="index">
-  <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
 
     <%= render 'shared/nav' %>
+            <%= yield %>
     <%= render 'shared/header' %>
-
-        <%= yield %>
-
     <%= render 'shared/button_top' %>
     <%= render 'shared/footer' %>
 
