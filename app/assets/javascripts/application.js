@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.min
+//= require freelancer
+//= require freelancer.min
 //= require_tree .
