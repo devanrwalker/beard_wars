@@ -27,13 +27,6 @@
     <%= render 'shared/nav' %>
             <%= yield %>
     <%= render 'shared/header' %>
-
-    <%= link_to "Register", new_user_registration_path %>
-    <%= link_to "Login", new_user_session_path %>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-
-        <%= yield %>
-
     <%= render 'shared/button_top' %>
     <%= render 'shared/footer' %>
 

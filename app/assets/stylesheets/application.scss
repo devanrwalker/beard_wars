@@ -1,2 +1,21 @@
 @import "bootstrap";
 @import "font-awesome";
+
+.nav-row {
+  float: right;
+}
+
+.nav-row a {
+  margin-left: 5px;
+}
+
+#new_user {
+  // float: center;
+  // background-color: white;
+}
+
+.devise-regs {
+text-align: center;
+float: center;
+background-color: white;
+}

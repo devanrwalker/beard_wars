@@ -1,18 +1,24 @@
     <!-- Navigation -->
     <nav id="mainNav" class="nav navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-            <div class="row">
-                <a class="navbar-brand" href="#page-top">ONLY THE BEST BEARDS ALLOWED</a>
-            <div class="my-nav">
-                    <a class="navbar" href="#page-top"></a>
+          <a class="navbar-brand" href="#page-top">ONLY THE BEST BEARDS ALLOWED</a>
+          <div class="my-nav">
+              <a class="navbar" href="#page-top"></a>
+              <div class="nav-row">
 
-                    <a href="#portfolio">Profile</a>
+                <a href="#about">Beards</a>
+                <a href="#portfolio">Profile</a>
+                <% if not signed_in? %>
+                  <a <%= link_to "Login", new_user_session_path %></a>
+                <% end %>
+                <% if signed_in? %>
+                  <a <%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
+                  <% end %>
+                <% if not signed_in? %>
+                  <a <%= link_to "Register", new_user_registration_path %></a>
+                <% end %>
 
-                    <a href="#about">Beards</a>
-
-                    <a href="#contact">Login</a>
-                    <a href="#contact">Register</a>
-                </div>      
-            </div>
+              </div>
+          </div>
         </div>
     </nav>
