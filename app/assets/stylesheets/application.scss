@@ -3,6 +3,7 @@
 
 .nav-row {
   float: right;
+  margin-top: -5px;
 }
 
 .nav-row a {
@@ -17,5 +18,44 @@
 .devise-regs {
 text-align: center;
 float: center;
-background-color: white;
+background-color: #dbf7f5;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.center-row {
+  text-align: center;
+}
+
+.buttons-spacing {
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.home-link {
+  font-size: 1.9em;
+}
+
+.home-link a {
+  color: white;
+}
+
+.profile-image img {
+  max-width: 118px;
+  // margin-left: 2px;
+  // margin-right: 2px;
+  margin-bottom: -10px;
+}
+
+.portfolio-sizing {
+  margin-top: 30px;
+  border: 2px lightblue solid;
+}
+
+.picture-positioning {
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 20px;
+  // border: 2px lightblue solid;
 }

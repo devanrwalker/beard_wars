@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   end
 
   root to: "home#index"
-  
+
 end

@@ -1,13 +1,14 @@
     <!-- Navigation -->
     <nav id="mainNav" class="nav navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-          <a class="navbar-brand" href="#page-top">ONLY THE BEST BEARDS ALLOWED</a>
+              <span class="home-link"><%= link_to "ONLY THE BEST BEARDS ALLOWED", root_path %></span>
           <div class="my-nav">
               <a class="navbar" href="#page-top"></a>
               <div class="nav-row">
 
                 <a href="#about">Beards</a>
-                <a href="#portfolio">Profile</a>
+
+                <a href="profile">Profile</a>
                 <% if not signed_in? %>
                   <a <%= link_to "Login", new_user_session_path %></a>
                 <% end %>
