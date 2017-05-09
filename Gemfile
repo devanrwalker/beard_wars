@@ -64,3 +64,8 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'autoprefixer-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 
+gem 'carrierwave', '~> 1.1'
+gem 'mini_magick', '~> 4.7'
+gem 'fog'
+gem 'unf', '~> 0.1.4'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
