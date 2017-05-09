@@ -1,0 +1,6 @@
+AWS_ACCESS_KEY_ID: AKIAJL3UHGYKL2AW4YWA
+AWS_SECRET_ACCESS_KEY: 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
+development:
+  AWS_BUCKET: us-west-1
+production:
+  AWS_BUCKET: us-west-1
