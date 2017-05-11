@@ -2,8 +2,9 @@ class PicturesController < ApplicationController
   layout 'pictures'
 
   def index
-    @picture = Picture.find_by_id(params[:id])
-    @pictures = Picture.order(created_at: :desc)
+    @picture_id = Picture.find_by_id(params[:id])
+    # @pictures = Picture.order(created_at: :desc)
+    @pictures = Picture.all
   end
 
   def show
@@ -18,7 +19,6 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(picture_params)
-    @picture.user_id = current_user.id
 
     respond_to do |format|
       if @picture.save
