@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TODO
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Set Profile Creation Limits
+Connect S3 Photos to Profiles by ID
+Make New Picture Button Clickable On Entire Block
+Fix Beard Away Footer Location
+Make "Share The Beard" Links Usable (Link Site To Their Accounts On Their Social Media)
+Change Pictures Path to Profile
+Adjust Nav Word Sizing on Smaller Devices
+Make Main Image Size Flexable On Screen Size Adjustment

@@ -8,7 +8,12 @@
 
                 <a href="#about">Beards</a>
 
-                <a href="profiles">Profile</a>
+                <% if not signed_in? %>
+                <a href="login">Profile</a>
+                <% end %>
+                <% if signed_in? %>
+                <a href="pictures">Profile</a>
+                <% end %>
                 <% if not signed_in? %>
                   <a <%= link_to "Login", new_user_session_path %></a>
                 <% end %>

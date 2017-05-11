@@ -100,6 +100,9 @@
                         <span class="img-responsive profile-image"><%= image_tag "beard-seeds" %></span>
                     </a>
                 </div>
+                <div class="picture-links btn btn-outline-primary btn-block">
+                  <%= link_to 'New Picture', new_picture_path %>
+                </div>
             </div>
         </div>
     </section>
@@ -108,8 +111,9 @@
     <div class="container portfolio-sizing">
       <div class="row">
           <div class="col-lg-12 text-center">
-              <h2>Welcome Devan</h2>
+              <h2>Welcome <%= current_user.name %></h2>
               <hr class="star-primary">
+              <%= @pictures.last %>
           </div>
       </div>
     </div>

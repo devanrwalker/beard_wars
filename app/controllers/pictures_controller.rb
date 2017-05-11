@@ -1,8 +1,9 @@
 class PicturesController < ApplicationController
-  before_action :set_picture, only: [:show, :edit, :update, :destroy]
+  layout 'pictures'
 
   def index
-    @pictures = Picture.all
+    @picture = Picture.find_by_id(params[:id])
+    @pictures = Picture.order(created_at: :desc)
   end
 
   def show
@@ -17,6 +18,7 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(picture_params)
+    @picture.user_id = current_user.id
 
     respond_to do |format|
       if @picture.save
@@ -50,10 +52,6 @@ class PicturesController < ApplicationController
   end
 
   private
-
-    def set_picture
-      @picture = Picture.find(params[:id])
-    end
 
     def picture_params
       params.require(:picture).permit(:title, :image)

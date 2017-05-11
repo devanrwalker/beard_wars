@@ -12,22 +12,17 @@
           <%= devise_error_messages! %>
 
           <div class="field">
-            <!-- <%= f.label :email %><br /> -->
             <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email" %>
           </div>
 
           <div class="field">
-            <!-- <%= f.label :password %> -->
             <% if @minimum_password_length %>
             <em><% @minimum_password_length %></em>
             <% end %>
             <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password (Minimun of 6 characters)" %>
-            <!-- <small id="passwordHelpInline" class="text-muted">
-      Minimum of 6 characters.</small> -->
           </div>
 
           <div class="field">
-            <!-- <%= f.label :password_confirmation %><br /> -->
             <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Confirm Password" %>
           </div>
         </div>
@@ -35,17 +30,14 @@
       <div class="col-md-3">
 
         <div class="field">
-          <!-- <%= f.label :name %><br /> -->
           <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "Name" %>
         </div>
 
         <div class="field">
-          <!-- <%= f.label :username %><br /> -->
           <%= f.text_field :username, autofocus: true, class: "form-control", placeholder: "User Name" %>
         </div>
 
         <div class="row">
-
 
           <div class="actions buttons-spacing">
             <%= f.submit "Sign up", class: 'btn btn-large btn-outline-primary center-row' %>
